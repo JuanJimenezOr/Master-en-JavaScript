@@ -14,21 +14,23 @@ window.addEventListener('load', () => {
     formulario.addEventListener('submit', () =>{
         console.log(formulario);
 
-        /*function mostrar(id){
-
-            for (var valor in datos) {
-                var parrafo = document.createElement('p');
-                var texto = document.createTextNode(datos[valor]);
-                parrafo.append(texto);
-                id.append(parrafo);
-            }
-        }*/
 
         mostrarDatos.style.visibility = "visible";
 
             var nombre = document.getElementById('nombre').value;
             var apellidos = document.getElementById('apellidos').value;
             var edad = document.getElementById('edad').value;
+
+            if(nombre.trim().length == 0 || !isNaN(nombre)){
+                alert('Nombre no valido');
+                return false;
+            }else if (apellidos.trim().length == 0){
+                alert('apellidos no validos');
+                return false;
+            } else if (edad <= 0 || isNaN(edad)){
+                alert('edad no valida');
+                return false;
+            }
 
             var datos = [nombre,apellidos,edad];
             console.log(datos);
