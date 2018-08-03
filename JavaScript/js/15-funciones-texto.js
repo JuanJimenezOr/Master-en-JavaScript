@@ -1,4 +1,4 @@
-'use strict'
+    'use strict'
 
 //transformacion de texto
 var n1 = 5555;
