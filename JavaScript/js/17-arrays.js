@@ -4,7 +4,7 @@
 
 var array = ["daniel","oscar","jose"];
 
-var array2 = new Array("php","JavaScript","java");
+var array2 = new Array("php","JavaScript","java","java");
 
 var elemento = Number(prompt("introduce el indice"));
 if(elemento >= array.length){

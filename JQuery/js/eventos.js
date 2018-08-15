@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    alert('todo cargaso')
+
+
    /*
     //mouseover y mouseout
     $('#caja') .mouseover( function() {
